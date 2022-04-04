@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>PIZZA PREDICTION</title>
+</head>
+<body bgcolor="FFB6C1">
+ <div class="login">
+	<h2><marquee behavior="alternate" direction="left"  bgcolor="#E0FFFF"><font color="#9370DB">PIZZA PREDICTION</font></marquee></h2>
+           <form action="{{ url_for('predict')}}"method="post">
+	<center><h3>Enter your age</h3></center>
+        	<center><input type="text" name="age" placeholder="age" required="required" /><br></center>
+		<center><h3>Enter your weight</h3></center>
+	<center><input type="text" name="weight" placeholder="weight" required="required" /><br><br></center>
+	<center><button type="submit" class="btn btn-primary btn-block btn-large">Predict</button></center>
+          </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
